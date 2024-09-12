@@ -1,27 +1,20 @@
-# JEST Unit Tests
-
 ## GitHub Actions
 
-[![Build and Tests](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml)
+[![Build and Tests](https://github.com/Bruno-Venturini/BrunoFreloVenturini-Turma02-Trabalho01/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/Bruno-Venturini/BrunoFreloVenturini-Turma02-Trabalho01/actions/workflows/node.js.yml)
 
-## SonarCloud
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_unit-tests-jest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_unit-tests-jest)
+## Introdução
 
-## Getting Started
+Para executar este projeto, siga os passos abaixo:
 
-In order to execute this project you must follow the steps below:
+1. Instale o [Node.js](https://nodejs.org/) (versão >= 20.x).
+2. Execute `npm install` para instalar todas as dependências do projeto.
+3. Execute `npm run test` para executar toda a suíte de testes.
+4. Execute `npm run coverage` para executar toda a suíte de testes com cobertura.
 
-1. Install [Node JS](https://nodejs.org/) (version >= 20.x)
-1. Run `npm install` to install all the project dependencies
-1. Run `npm run test` to execute the entire test suite
-1. Run `npm run coverage` to execute the entire test suite with coverage
+Todos os artefatos de execução podem ser encontrados em `./coverage`. Para remover esses arquivos, execute `npm run clean`.
 
-All execution artifacts can be found in `./coverage`, if you want to remove these files run `npm run clean`.
+## Estrutura do Projeto
 
-## Project Structure
-</br>
-<ul>
-    <li>src: source code</li>
-    <li>test: unit test files</li>
-</ul>
+- **`src/`**: Código-fonte.
+- **`test/`**: Arquivos de testes unitários.# JEST Unit Tests
