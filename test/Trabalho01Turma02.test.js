@@ -293,4 +293,46 @@ describe('Biblioteca', () => {
         const retorno = biblioteca.listarLivrosDisponiveis();
         expect(retorno).toStrictEqual(livrosDisponiveis)
     })
+
+    test('Precisa contar os livros adicionados', () => {
+        const livros = [
+            {
+                id: 1,
+                titulo: '50 Tons de cinza',
+                emprestado: true,
+                idMembro:1
+            },
+            {
+                id:2,
+                titulo: 'Senhor dos Anéis - As duas torres',
+                emprestado: true,
+                idMembro:1
+            }            
+        ]
+
+        biblioteca.adicionarLivro(livros[0]);
+        biblioteca.adicionarLivro(livros[1]);
+
+        const retorno = biblioteca.contarLivros();
+        expect(retorno).toBe(2);
+    });
+
+    test('Precisa contar os membros adicionados', () => {
+        const membros = [
+            { 
+                id: 1, 
+                nome: 'Leandro'
+            },
+            {
+                id:2,
+                nome:'Bruno'
+            }
+        ]
+
+        biblioteca.adicionarMembro(membros[0]);
+        biblioteca.adicionarMembro(membros[1]);
+
+        const retorno = biblioteca.contarMembros();
+        expect(retorno).toBe(2);
+    });
 });
